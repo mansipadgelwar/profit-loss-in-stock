@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root {
+    --primary-color:#40916C;
+    --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
+}
+
+body{
+    background-color: var(--off-white);
+    font-family: 'Concert One', cursive;
+    color: var(--off-white);
+}
+
+.centered-container{
+    
+    width: 30em;
+    max-width: 70%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    border-radius: 1em;
+    text-align: center;
+    font-size: 1em;
+    height: 80vh;
+    display: block;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 var(--dark-gray);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    align-items: center;
+    border: 3px solid var(--primary-color);
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5;
+    font-weight: bold;
+    padding: 0.5rem;
+   
+}
+
+input{
+
+    width: 45%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+
+.form{
+    margin: auto;
+    text-align: center;
+    background-color: var(--primary-color);   
+    border-radius: 0.3rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0px 0px 5px 0px var(--off-white);
+    
+}
+
+.button{
+    
+    max-width: 90%;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.button:hover{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+
+
+.footer{
+    background-color: var(--primary-color);   
+    border-radius: 0.3rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0px 0px 5px 0px var(--off-white);
+    text-align: center;
+   
+}
+
+.list-footer{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.list-item{
+    margin: 0.5rem;
+    padding: 0rem 1rem;
+}
+
+.list-link{
+    text-decoration: none;
+    color: white;
+}
+
+.copyright{
+    color:white;
+}
+
+.fa{
+    font-size: 1.1rem;
+}
