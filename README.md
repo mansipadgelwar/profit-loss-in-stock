@@ -1,2 +1,2 @@
-# cash-register-manager
- An app to manage the cash.
+# profit-loss-in-stock
+ An app to tell the user if he/she made profit/loss on stocks.
