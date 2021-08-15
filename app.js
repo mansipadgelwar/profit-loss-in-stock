@@ -9,6 +9,8 @@ var lossGIF = "./images/loss.webp";
 
 function profitLoss(e){
     e.preventDefault();
+    outputGIF.style.display = "none";
+    output.innerHTML = "";
     purchasePrice = Number(oldPrice.value);
     stockQuantity = Number(quantity.value);
     currentPrice = Number(newPrice.value);
@@ -27,7 +29,7 @@ function profitLoss(e){
             outputGIF.style.display = "block";
             outputGIF.style.backgroundImage = "url('/images/loss.webp')";
          }
-         else
+         else if(currentPrice > purchasePrice)
          {
             const profit = (currentPrice - purchasePrice) * stockQuantity;
             const percentProfit = (((currentPrice - purchasePrice)*100)/purchasePrice).toFixed(2);
@@ -35,6 +37,9 @@ function profitLoss(e){
             " %. Your total profit is Rs." + profit;
             outputGIF.style.display = "block";
             outputGIF.style.backgroundImage = "url('/images/profit.webp')";
+         }
+         else{
+            output.innerHTML ="NO profit No loss";
          }
     
         }
