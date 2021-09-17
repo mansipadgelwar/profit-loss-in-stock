@@ -14,3 +14,5 @@ An app which helps user to know how much profit or loss he/she is making through
 - HTML
 - CSS
 - JavaScript
+
+Link: https://mansi-profit-loss-in-stock.netlify.app/
