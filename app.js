@@ -23,7 +23,7 @@ function profitLoss(e){
          if(purchasePrice > currentPrice)
          {
             const loss = (purchasePrice - currentPrice) * stockQuantity;
-            const percentLoss = ((loss / purchasePrice)*100).toFixed(2);
+            const percentLoss = (((purchasePrice - currentPrice)*100)/purchasePrice).toFixed(2);
             output.innerHTML ="You lost " + percentLoss +
             " %. Your total loss is Rs." + loss;
             outputGIF.style.display = "block";
@@ -32,7 +32,7 @@ function profitLoss(e){
          else if(currentPrice > purchasePrice)
          {
             const profit = (currentPrice - purchasePrice) * stockQuantity;
-            const percentProfit = ((profit / purchasePrice) * 100).toFixed(2);
+            const percentProfit = (((currentPrice - purchasePrice) * 100)/purchasePrice).toFixed(2);
             output.innerHTML ="You gained " + percentProfit +
             " %. Your total profit is Rs." + profit;
             outputGIF.style.display = "block";
