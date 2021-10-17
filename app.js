@@ -7,7 +7,8 @@ var profitGIF = "./images/profit.webp";
 var lossGIF = "./images/loss.webp"; 
 
 
-function profitLoss(){
+function profitLoss(e){
+   e.preventDefault();
     outputGIF.style.display = "none";
     output.innerHTML = "";
     purchasePrice = Number(oldPrice.value);
