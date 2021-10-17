@@ -23,8 +23,7 @@ function profitLoss(){
          {
             const loss = (purchasePrice - currentPrice) * stockQuantity;
             const percentLoss = (((purchasePrice - currentPrice)*100)/purchasePrice).toFixed(2);
-            output.innerHTML ="You lost " + percentLoss +
-            " %. Your total loss is Rs." + loss;
+            output.innerText =`You lost ${percentLoss}%. Your total loss is Rs. ${loss}`;
             outputGIF.style.display = "block";
             outputGIF.style.backgroundImage = "url('/images/loss.webp')";
          }
@@ -32,28 +31,25 @@ function profitLoss(){
          {
             const profit = (currentPrice - purchasePrice) * stockQuantity;
             const percentProfit = (((currentPrice - purchasePrice) * 100)/purchasePrice).toFixed(2);
-            output.innerHTML ="You gained " + percentProfit +
-            " %. Your total profit is Rs." + profit;
+            output.innerText =`You gained ${percentProfit}%. Your total profit is Rs. ${profit}`;
             outputGIF.style.display = "block";
             outputGIF.style.backgroundImage = "url('/images/profit.webp')";
          }
          else{
-            output.innerHTML ="NO profit No loss";
+            output.innerText ="NO profit No loss";
          }
     
         }
         else
         {
-        output.innerHTML = "Enter values greater than 0";
+        output.innerText = "Enter values greater than 0";
         }
     }    
     else
     {
-    output.innerHTML = "All the fields are mandatory, please enter all the values!";
+    output.innerText = "All the fields are mandatory, please enter all the values!";
     
     }
-
-
 }
 
 btnSubmit.addEventListener("click", profitLoss);
